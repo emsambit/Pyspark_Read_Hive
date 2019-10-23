@@ -57,6 +57,6 @@ LogMessage "------------------------------------ SPARK SUBMIT STARTED-----------
 #pyfile=${py_file_path}"/""sc_dc_inv_dly_load.py"
 #echo ${pyfile}
 
-spark-submit --master yarn --deploy-mode cluster --queue mdsedatload ${PY_FILE_PATH}/repl_sku_invt_dly.py ${hive_param} ${target_table}
+spark-submit --master yarn --deploy-mode cluster --queue mdsedatload ${PY_FILE_PATH}/spark_program.py ${hive_param} ${target_table}
 
 LogMessage "------------------------------------ SPARK EXECUTION FINISHED--------------------------------------------"
